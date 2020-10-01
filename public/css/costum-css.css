@@ -1,0 +1,46 @@
+ul.navbar-nav.mr-auto {
+    padding: 10px 30px;
+    font-size: 16px;
+}
+
+.list-group.list-group-flush .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background: transparent;
+    background-clip: padding-box;
+    border: none;
+}
+
+.list-group.list-group-flush .dropdown-item:active {
+    color: #000;
+    text-decoration: none;
+    background: transparent;
+}
+
+.list-group.list-group-flush  .dropdown-menu.show {
+    display: contents;
+}
+
+
+.categoryListImage{
+    max-width: 100px;
+    height: auto;
+}
+
+
+img#blah {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
