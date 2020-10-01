@@ -42,6 +42,22 @@
                         </div>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle dropdown-item" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <label>Shop managers</label>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="leftbarBuble">
+                            <a class="dropdown-item" href="{{ route('new-manager') }}">
+                                New shop manager
+                            </a>
+                            <a class="dropdown-item" href="{{ route('list-managers') }}">
+                                All shop manager
+                            </a>
+                        </div>
+                    </div>
+                </li>
             </ul>
 
         </div>
@@ -63,8 +79,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     @guest
-                        <li><a class="nav-link" href="{{ route('login') }}">{{ trans('titles.login') }}</a></li>
-                        <li><a class="nav-link" href="{{ route('register') }}">{{ trans('titles.register') }}</a></li>
+                        <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                     @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
