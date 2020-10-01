@@ -16,6 +16,10 @@ $("#categoryImage").change(function() {
     readURL(this);
 });
 
+$("#productImage").change(function() {
+    readURL(this);
+});
+
 
 // navbar toogle button
 $("#menu-toggle").click(function(e) {

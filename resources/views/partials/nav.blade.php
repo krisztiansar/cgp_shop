@@ -17,10 +17,10 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <div class="leftbarBuble">
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route('new-product') }}">
                                 New product
                             </a>
-                            <a class="dropdown-item" href="">
+                            <a class="dropdown-item" href="{{ route('list-products') }}">
                                 All product
                             </a>
                         </div>
