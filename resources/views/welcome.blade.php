@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 id="categoryName" style="margin-bottom: 20px">Összes termék</h1>
+                <h1 id="categoryName" style="margin-bottom: 20px">All products</h1>
             </div>
         </div>
         <div class="row" id="test">

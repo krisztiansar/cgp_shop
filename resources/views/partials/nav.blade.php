@@ -75,29 +75,28 @@
                 </div>
                 <div class="list-group list-group-flush">
                     <div class="dropdown-divider"></div>
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav" style="text-align: center;">
                         @foreach($category_list as $category)
-                            <li class="nav-item">
+                            <li class="nav-item" style="padding-bottom: 30px;">
+                                <img class="leftBarImage" src="{{ asset('images/uploads/'.$category->image_name) }}" alt="">
                                 <a href="#" id="{{$category->category_id}}" class="categoryLink">{{ $category->title }}</a>
                             </li>
                         @endforeach
                     </ul>
                 </div>
             </div>
-        @else
-            <div class="sidebar-heading">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    CGP Shop
-                </a>
-            </div>
-    @endif
-@endguest
+        @endif
+    @endguest
 
 <!-- Page Content -->
     <div id="page-content-wrapper">
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <a href="#" class="toogleMenu" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+            @if(collect(request()->segments())->last() == 'login')
+                <a class="navbar-brand" href="{{ url('/') }}">CGP Shop</a>
+            @else
+                <a href="#" class="toogleMenu" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            @endif
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
