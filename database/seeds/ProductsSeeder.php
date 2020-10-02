@@ -20,7 +20,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -33,7 +33,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -46,7 +46,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -59,7 +59,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -72,7 +72,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -85,7 +85,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -98,7 +98,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -111,7 +111,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -124,7 +124,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
@@ -137,7 +137,7 @@ class ProductsSeeder extends Seeder
                 'price' => 1000,
                 'sale_price' => null,
                 'tax' => 27,
-                'product_image' => 3,
+                'product_image' => 1,
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()

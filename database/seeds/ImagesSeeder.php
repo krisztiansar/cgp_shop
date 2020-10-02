@@ -13,6 +13,13 @@ class ImagesSeeder extends Seeder
     {
         $images = [
             [
+                'image_name' => '2020_10_02_01_10_45_56223.jpeg',
+                'status' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+
+            [
                 'image_name' => '2020_10_02_04_10_17_40638.jpeg',
                 'status' => 1,
                 'created_at' => now(),
@@ -21,13 +28,6 @@ class ImagesSeeder extends Seeder
 
             [
                 'image_name' => '2020_10_02_04_10_05_67823.jpeg',
-                'status' => 1,
-                'created_at' => now(),
-                'updated_at' => now()
-            ],
-
-            [
-                'image_name' => '2020_10_02_01_10_45_56223.jpeg',
                 'status' => 1,
                 'created_at' => now(),
                 'updated_at' => now()
