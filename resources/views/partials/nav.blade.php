@@ -65,14 +65,39 @@
     @endauth
     <!-- /#sidebar-wrapper -->
 
+    @guest
+        @if(isset($category_list))
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    CGP Shop
+                </a>
+            </div>
+            <div class="list-group list-group-flush">
+                <div class="dropdown-divider"></div>
+                <ul class="navbar-nav mr-auto">
+                    @foreach($category_list as $category)
+                    <li class="nav-item">
+                        <a href="#" id="{{$category->category_id}}" class="categoryLink">{{ $category->title }}</a>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+        @else
+            <div class="sidebar-heading">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    CGP Shop
+                </a>
+            </div>
+        @endif
+    @endguest
+
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-
-            @auth
                 <a href="#" class="toogleMenu" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            @endauth
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -91,10 +116,6 @@
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item {{ Request::is('profile/'.Auth::user()->name, 'profile/'.Auth::user()->name . '/edit') ? 'active' : null }}" href="{{ url('/profile/'.Auth::user()->name) }}">
-                                    {!! trans('titles.profile') !!}
-                                </a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">

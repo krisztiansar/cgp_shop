@@ -23,10 +23,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/simple-sidebar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/costum-css.css') }}">
+
 </head>
 <body>
     <div id="app">
         @include('partials.nav')
     </div>
+
+
 </body>
 </html>
