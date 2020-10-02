@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="col-lg-4 col-md-6 col-xs-12 exampleProduct" style="display: none;">
         <div class="card" style="margin-bottom: 20px;">
             <img src="{{ asset('images/uploads/') }}" class="card-img-top" alt="...">
@@ -14,10 +13,11 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
-            <h1 id="categoryName" style="margin-bottom: 20px">Összes termék</h1>
+            <div class="col-12">
+                <h1 id="categoryName" style="margin-bottom: 20px">Összes termék</h1>
+            </div>
         </div>
         <div class="row" id="test">
             @if($products)
@@ -44,8 +44,6 @@
             @endif
         </div>
     </div>
-
-
 @endsection
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -54,7 +52,8 @@
         $(".categoryLink").click(function(){
             var category_id = jQuery(this).attr("id");
 
-            console.log("category_id: "+category_id)
+            $('a.categoryLink').removeClass('active');
+            $('a#'+category_id).addClass('active');
 
             $.ajaxSetup({
                 headers: {
@@ -99,10 +98,7 @@
                         itemHTML.find(".card-img-top").attr("src", imgSrc);
                         $('#test').append(itemHTML)
                     })
-
-                    //image_name
                 }
-
             });
         });
     });

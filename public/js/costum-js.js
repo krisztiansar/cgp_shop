@@ -28,7 +28,7 @@ $("#menu-toggle").click(function(e) {
 });
 
 $(document).ready(function() {
-    $('.collapse:first').addClass('show');
+    $('#sidebar-wrapper .collapse:first').addClass('show');
 });
 
 $(document).ready(function(){
